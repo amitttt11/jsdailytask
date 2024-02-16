@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <h1>DARSH</h1>
+
+    <input type="number" id="sub1" placeholder="maths"><br>
+    <input type="number" id="sub2" placeholder="english"><br>
+    <input type="number" id="sub3" placeholder="science"><br>
+    <input type="number" id="sub4" placeholder="social science"><br>
+    <input type="number" id="sub5" placeholder="hindi"><br>
+
+    <button onclick="result()">Result</button>
+
+    <script>
+         let sub1,sub2,sub3,sub4,sub5 =0;
+         let stotal,perc=0;
+         function result(){
+
+            getvalues();
+            total();
+            per();
+            gra();
+         }
+          
+         function getvalues(){
+
+            sub1 = +(document.getElementById("sub1").value);
+            sub2 = +(document.getElementById("sub2").value);
+            sub3 = +(document.getElementById("sub3").value);
+            sub4 = +(document.getElementById("sub4").value);
+            sub5 = +(document.getElementById("sub5").value);
+         }
+
+         function total(){
+
+            stotal = sub1+sub2+sub3+sub4+sub5;
+            console.log(stotal);
+         }
+
+         function per(){
+
+            perc = stotal/5;
+         }
+
+         function gra(){
+
+         }
+    </script>
+
+</body>
+</html>
